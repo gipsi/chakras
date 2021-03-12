@@ -1,0 +1,120 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta  charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chakra visualisation</title>
+      <!-- see https://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
+    <style>
+        /* following two viewport lines are equivalent to meta viewport statement above, needed for Windows */
+        /* see https://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and https://drafts.csswg.org/css-device-adapt// */
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }  @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }           @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+    
+    body{
+      background: mediumblue;
+      color: lightskyblue;
+      border-radius: 10%;
+      font-family: Papyrus, fantasy;
+      text-align: center;
+      font-size: 200%;
+      text-shadow: 2px 2px 5px #000000;
+    }
+    
+    img {
+      margin-left: 1rem;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      border: 1px dashed cornflowerblue;
+      padding: 5px;
+      border-radius: 50%;
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.19);
+      
+      
+      transition: 0.70s;
+          -webkit-transition: 0.70s;
+          -moz-transition: 0.70s;
+          -ms-transition: 0.70s;
+          -o-transition: 0.70s;
+
+    }
+    
+    img:hover {
+          transition: 0.70s;
+          -webkit-transition: 0.70s;
+          -moz-transition: 0.70s;
+          -ms-transition: 0.70s;
+          -o-transition: 0.70s;
+          -webkit-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+
+} 
+
+
+    ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+      margin-bottom: 1rem;
+        }
+    
+    details summary { 
+          cursor: pointer;
+        }
+    
+    * {
+          outline: 0;
+          box-sizing: border-box;
+        }
+
+
+        a:link {
+          color: lightskyblue;
+        }
+
+/* visited link */
+        a:visited {
+          color: lime;
+        }
+
+/* mouse over link */
+        a:hover {
+          color: pink;
+        }   
+
+/* selected link */
+        a:active {
+          color: blue;
+        }
+
+    
+    </style>
+  
+  
+  
+  </head>
+
+<body>
+
+    <h1>Chakra visualisation</h1>
+    
+    <ul>
+        <li><img alt="Crown Chakra" title="Crown Chakra" src="https://i.imgur.com/zKOVrKo.png" width="150"><details><summary><h3>Crown Chakra </h3></summary><p>Top of the head.</p></details> </li>
+        <li><img alt="Brow Chakra" title="Brow Chakra" src="https://i.imgur.com/MfRKTKv.png" width="150"><details><summary><h3>Brow Chakra </h3></summary><p>Centre of the forehead, the 'Third eye'.</p></details> </li>
+        <li><img alt="Throat Chakra"title="Throat Chakra" src="https://i.imgur.com/QVK2MCq.png" width="150"><details><summary><h3>Throat Chakra </h3></summary><p>Point of the neck between shoulders and head.</p></details> </li>
+    <li><img alt="Heart Chakra" title="Heart Chakra" src="https://i.imgur.com/RjJwRyC.png" width="150"><details><summary><h3>Heart Chakra </h3></summary><p>Centre of the chest, back of the ribcage.</p></details> </li>
+        <li><img alt="Solar Chakra" title="Solar Chakra" src="https://i.imgur.com/UjASqRG.png" width="150"><details><summary><h3>Solar Chakra</h3></summary><p>The chakra core, centred above and behind the navel.</p></details> </li>
+        <li><img alt="Sacral Chakra" title="Sacral Chakra" src="https://i.imgur.com/Yxc6sL2.png" width="150"><details><summary><h3>Sacral Chakra </h3></summary><p>Centred on the sacrum between the hips.</p></details> </li>
+    <li><img alt="Root Chakra" title="Root Chakra" src="https://i.imgur.com/rfcFKFt.png" width="150"><details><summary><h3>Root Chakra </h3></summary><p>At the root of the spine, tailbone.</p></details> </li>
+    </ul>
+  
+  <footer><a href="https://pixabay.com/users/peter-lomas-5966639/?tab=popular" target="_blank" rel="noopener" rel="noreferrer">Images by Peter Lomas, Pixabay</a> </footer>
+
+</body>
+</html>
+
+
+Resources
